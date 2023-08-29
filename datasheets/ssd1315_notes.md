@@ -110,27 +110,27 @@ Note that most of these are just re-setting the default values and can be omitte
 0xAE // Set display off
 0x00 // Set column start address lower nibble to 0
 0x10 // Set column start address upper nibble to 0
-0x40 // Set display start line register 
-0x81 // Set contrast to CF
+0x40 // Set display start line register  -- DEFAULT
+0x81 // Set contrast to CF -- UNNECESSARY
 0xCF // --
-0xA1 // Set segment remapping to flipped
-0xC0 // Set normal row scan direction
-0xA6 // Set normal (non-inverted) display mode
-0xA8 // Set multiplex ratio to N=0x3f=63 => M = 64
+0xA1 // Set segment remapping to flipped -- UNNECESSARY
+0xC0 // Set normal row scan direction -- DEFAULT
+0xA6 // Set normal (non-inverted) display mode -- DEFAULT
+0xA8 // Set multiplex ratio to N=0x3f=63 => M = 64 -- DEFAULT
 0x3f // --
-0xD3 // Set display offset to 0
+0xD3 // Set display offset to 0 -- DEFAULT
 0x00 // --
-0xD5 // Set display clock divide ratio / oscillator frequency
+0xD5 // Set display clock divide ratio / oscillator frequency -- DEFAULT
 0x80 // --
-0xD9 // Set pre-charge periods. Phase 1 is 1 clock. Phase 2 is 30 clocks.
+0xD9 // Set pre-charge periods. Phase 1 is 1 clock. Phase 2 is 30 clocks. -- UNSURE
 0xF1 // --
-0xDA // Set COM pin hardware configuration to alternative, left-right remap disabled
+0xDA // Set COM pin hardware configuration to alternative, left-right remap disabled - DEFAULT
 0x12 // -- 
-0xDB // Set COM select voltage 
-0x40 // THIS IS INVALID. THIS SHOULD BE 0x20
-0x20 // Set addressing mode to paged
+0xDB // Set COM select voltage -- UNSURE
+0x40 // -- THIS IS INVALID. THIS SHOULD BE 0x20
+0x20 // Set addressing mode to paged -- DEFAULT
 0x02 // --
-0x8D // Set charge pump to disabled
+0x8D // Set charge pump to enabled
 0x14 // --
 0xA4 // Set display enabled
 0xA6 // Set normal (non-inverted display mode)
